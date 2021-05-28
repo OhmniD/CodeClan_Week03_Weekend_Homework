@@ -2,8 +2,9 @@
 from models.choice import Choice
 
 # Can't escape the feeling that this is a bit of a mess and there's a better way to do it
-# Was trying to use a choice class so could be expanded if required (e.g. with lizard, spock)
-# By converting choice.beats to a list, as in the preferred task lab
+# Was trying to use a choice class so could be expanded if required (e.g. with lizard, spock)...
+# ...by converting choice.beats to a list, as in the preferred task lab
+# Possible addition - logic to check if the inputs are valid
 
 class Game:
     def __init__(self, player1, player2):
