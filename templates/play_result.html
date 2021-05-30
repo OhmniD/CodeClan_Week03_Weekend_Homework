@@ -1,5 +1,8 @@
 {% block result %}
 
+<span>{{ player1.name }} chose {{ player1.choice }}</span>
+<br>
+<span>{{ player2.name }} chose {{ player2.choice }}</span>
 {% if game_result == None %}
     <p>It's a draw!</p>
 {% else %}
