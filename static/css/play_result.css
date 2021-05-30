@@ -1,0 +1,25 @@
+.player-choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-auto-flow: column;
+    justify-items: center;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.player1-icon, .player2-icon {
+    font-size: 3em;
+    color: #a3cef1;
+}
+
+.outcome {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: "Londrina Shadow";
+    color: #E98A15;
+}
+

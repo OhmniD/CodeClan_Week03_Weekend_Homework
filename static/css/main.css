@@ -33,7 +33,7 @@ main > h1 {
 
 .far, .fas {
     font-size: 2em;
-    margin-right: 5px;
+    margin: 0 5px 0 5px;
 }
 
 .fa-cut {

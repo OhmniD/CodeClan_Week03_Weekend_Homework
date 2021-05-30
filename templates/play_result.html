@@ -1,12 +1,38 @@
 {% block result %}
 
-<span>{{ player1.name }} chose {{ player1.choice }}</span>
-<br>
-<span>{{ player2.name }} chose {{ player2.choice }}</span>
-{% if game_result == None %}
-    <p>It's a draw!</p>
-{% else %}
-    <p>{{ game_result }} wins!</p>
-{% endif %} 
+<section class="results">
+    <div class="player-choices">
+        <span>{{ player1.name }} chose {{ player1.choice.title() }}</span>
+        <div class="player1-icon">
+            {% if player1.choice == "rock" %}
+                <i class="far fa-gem"></i>
+            {% elif player1.choice == "paper" %}
+                <i class="far fa-sticky-note"></i>
+            {% else %}
+                <i class="fas fa-cut"></i>
+            {% endif %}
+        </div>
+        <span>{{ player2.name }} chose {{ player2.choice.title() }}</span>
+        <div class="player2-icon">
+            {% if player2.choice == "rock" %}
+                <i class="far fa-gem"></i>
+            {% elif player2.choice == "paper" %}
+                <i class="far fa-sticky-note"></i>
+            {% else %}
+                <i class="fas fa-cut"></i>
+            {% endif %}
+        </div>
+    </div>
+</section>
+    <section>
+        <div class="outcome">
+            {% if game_result == None %}
+                <p>It's a draw!</p>
+            {% else %}
+                <span>{{ game_result }} wins!</span>
+            {% endif %}
+        </div>
+    </section>
+
 
 {% endblock %}
