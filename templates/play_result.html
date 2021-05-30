@@ -1,0 +1,9 @@
+{% block result %}
+
+{% if game_result == None %}
+    <p>It's a draw!</p>
+{% else %}
+    <p>{{ game_result }} wins!</p>
+{% endif %} 
+
+{% endblock %}

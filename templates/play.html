@@ -19,10 +19,13 @@
         </form>
     </section>
 
-    {% if game_result == None%}
-        <p>It's a draw!</p>
-    {% else %}
-        <p>{{ game_result }} wins!</p>
-    {% endif %} 
+    <section>
+        {% if game_result != "unplayed" %}
+
+        {% include "play_result.html" %}
+        
+        {% endif %}
+    </section>
 
 {% endblock %}
+

@@ -24,7 +24,7 @@ def index(player1_choice, player2_choice):
 
 @app.route('/play')
 def play_computer_show():
-    return render_template('play.html', title=title)
+    return render_template('play.html', title=title, game_result="unplayed")
 
 @app.route('/play', methods=['POST'])
 def play_computer_post():
