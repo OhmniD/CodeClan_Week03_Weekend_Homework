@@ -23,5 +23,23 @@ main > h1 {
     font-size: 1.1em;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style-type: none;
+}
+
+.rules h2, p {
+    margin-bottom: 15px;
+}
+
+.far, .fas {
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.fa-cut {
+    transform: rotate(90deg);
+}
+
+.how-to h2, p {
+    margin-bottom: 15px;
 }
