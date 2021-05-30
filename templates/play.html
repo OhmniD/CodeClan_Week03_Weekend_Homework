@@ -1,31 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-    <h1>Play against the computer!</h1>
-
-    <section>
-        <p>Enter your name and your choice to compete against the computer</p>
-        <form method="post">
-            <label for="name"></label>
-            <input type="text" name="name" id="name">
-            <label for="choice"></label>
-            <select name="choice" id="choice">
-                <option value="rock">Rock</option>
-                <option value="paper">Paper</option>
-                <option value="scissors">Scissors</option>
-            </select>
-            <input type="submit" value="Play!">
-        </form>
-    </section>
-
-    <section>
-        {% if game_result != "unplayed" %}
-
-        {% include "play_result.html" %}
-        
-        {% endif %}
-    </section>
+<main>
+    
+        <h1>{{ title }} - play against the computer!</h1>
+    
+        <section class="choice-picker">
+            <p>Enter your name and your choice to compete against the computer</p>
+            <form method="post">
+                <label for="name"></label>
+                <input type="text" name="name" id="name">
+                <label for="choice"></label>
+                <select name="choice" id="choice">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <input type="submit" value="Play!">
+            </form>
+        </section>
+    
+        <section>
+            {% if game_result != "unplayed" %}
+    
+            {% include "play_result.html" %}
+    
+            {% endif %}
+        </section>
+</main>
 
 {% endblock %}
 

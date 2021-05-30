@@ -1,0 +1,19 @@
+main {
+    font-family: "Raleway";
+    padding-left: 15px;
+    margin-top: 0;
+    color: #2e2e3a;
+    background-color: #E7ECEF;
+    height: 100%
+}
+
+main > h1 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: fit-content(40%) fit-content(40%);
+    justify-content: space-evenly;
+}
