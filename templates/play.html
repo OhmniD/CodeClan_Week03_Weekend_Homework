@@ -7,16 +7,16 @@
     
         <section class="choice-picker">
             <p>Enter your name and your choice to compete against the computer</p>
-            <form method="post">
-                <label for="name"></label>
+            <form method="post" id="choice-form">
+                <label for="name">Name:</label>
                 <input type="text" name="name" id="name">
-                <label for="choice"></label>
+                <label for="choice">Choice:</label>
                 <select name="choice" id="choice">
                     <option value="rock">Rock</option>
                     <option value="paper">Paper</option>
                     <option value="scissors">Scissors</option>
                 </select>
-                <input type="submit" value="Play!">
+                <input type="submit" value="Play!" id="submit">
             </form>
         </section>
     

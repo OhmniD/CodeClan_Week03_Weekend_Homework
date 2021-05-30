@@ -17,3 +17,28 @@ main > h1 {
     grid-template-columns: fit-content(40%) fit-content(40%);
     justify-content: space-evenly;
 }
+
+#choice-form {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    align-items: center;
+    opacity: 0.8;
+}
+
+#name {
+    margin: 0 10px 0 5px;
+    border-radius: 5px;
+}
+
+#choice {
+    margin: 0 10px 0 5px;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+}
+
+#submit {
+    margin: 0 10px 0 5px;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+}
