@@ -10,7 +10,7 @@
 
 .player1-icon, .player2-icon {
     font-size: 3em;
-    color: #a3cef1;
+    color: #86989A;
 }
 
 .player1-icon {
@@ -49,7 +49,7 @@
     align-items: center;
     font-size: 3em;
     font-family: "Londrina Solid";
-    color: #E98A15;
+    color: #DF9739;
     animation: slideInFromBottom 2s
 }
 

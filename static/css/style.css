@@ -13,32 +13,31 @@ header {
     height: 50px;
     padding:15px;
     font-family: "Londrina Solid";
-    background-color: #2E2E3A;
+    background-color: #50746C;
 }
 
 header > h1 {
-    color: #E98A15;
+    color: #F2F1ED;
 }
 
 #header-menu {
     display: flex;
-    flex-direction: column-reverse;
     flex-direction: row;
     list-style-type: none;
 }
 
 #header-menu > li {
-    background-color: #E7ECEF;
+    background-color: #222527;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
 }
 
 #header-menu > li > a {
-    color: #E98A15;
+    color: #F2F1ED;
     text-decoration: none;
 }
 
 #header-menu > li:hover {
-    background-color: #227c9d;
+    background-color: #df9739;
 }

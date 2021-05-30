@@ -27,12 +27,5 @@ class Game:
         else:
             return player2.name
     
-    # def play_computer(self, player1):
-    #     self.player1 = player1
-    #     computer_choice = random.choice(['rock', 'paper', 'scissors'])
-    #     self.player2 = Player("Computer", computer_choice)
-    #     self.game_logic()
-
-    
 
         
