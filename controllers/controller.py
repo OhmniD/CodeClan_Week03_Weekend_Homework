@@ -18,8 +18,8 @@ def welcome():
 def index(player1_choice, player2_choice):
     player1 = Player("Player 1", player1_choice)
     player2 = Player("Player 2", player2_choice)
-    game = Game(player1, player2)
-    game_result = game.game_logic()
+    game = Game()
+    game_result = game.game_logic(player1, player2)
     return render_template('index.html', title=title, game_result=game_result)
 
 @app.route('/play')
@@ -33,6 +33,6 @@ def play_computer_post():
     player1 = Player(player_name, player_choice)
     computer_choice = choice(['rock', 'paper', 'scissors'])
     player2 = Player("Computer", computer_choice)
-    game = Game(player1, player2)
-    game_result = game.game_logic()
+    game = Game()
+    game_result = game.game_logic(player1, player2)
     return render_template('play.html', title=title, game_result=game_result)
