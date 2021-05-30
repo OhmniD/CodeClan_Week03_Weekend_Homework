@@ -1,12 +1,14 @@
 <html>
     <head>
         <title>{{ title }}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     </head>
     <body>
       
       
       <header>
-        <ul>
+        <h1>{{ title }}</h1>
+        <ul  id="header-menu">
           <li><a href="/welcome">Rules</a></li>
           <li><a href="/play">Play against the computer</a></li>
         </ul>

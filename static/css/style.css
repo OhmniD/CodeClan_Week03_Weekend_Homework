@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding:15px;
+    font-family: "Londrina Solid";
+    background-color: #2E2E3A;
+}
+
+header > h1 {
+    color: #E98A15;
+}
+
+#header-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#header-menu > li {
+    background-color: #E7ECEF;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#header-menu > li > a {
+    color: #E98A15;
+    text-decoration: none;
+}
+
+#header-menu > li:hover {
+    background-color: #ac7b84;
+}
