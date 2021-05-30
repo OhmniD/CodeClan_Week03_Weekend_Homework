@@ -8,7 +8,7 @@ title="Rock, Paper, Scissors"
 
 @app.route('/welcome')
 def welcome():
-    return render_template('welcome.html', title=title)
+    return render_template('index.html', title=title,game_result="unplayed")
 
 @app.route('/<player1_choice>/<player2_choice>')
 def index(player1_choice, player2_choice):
